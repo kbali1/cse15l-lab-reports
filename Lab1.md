@@ -1,6 +1,22 @@
 1. Installing Visual Studio Code
 
 For this first step, I did not need to install Visual Studio Code because it was already installed on my computer. 
-However, to install Visual Studio Code, I downloaded the Visual Studio Code installer for Windows. Then I ran the 
-installer by selecting the Visual Studio Code installer from the start menu.
-![Image](VisCodeLab1.png)
+But, to install Visual Studio Code, I would need to download the Visual Studio Code installer for Windows and run the 
+installer by selecting the Visual Studio Code installer from the start menu. After the program finishes installing,
+I should be able open it up to this page: ![Image](VisCodeLab1.png)
+
+
+2. Remotely Connecting
+
+I did not need to install git for Windows,but it would be the first thing I need to do for this step. After git is installed, 
+I would set my terminal in Visual Studio code to git bash and type ssh and my course account in the terminal, which 
+would look like this: ssh cs15lsp23aa@ieng6.ucsd.edu. The terminal had a message pop up on th escreen asking me if I wanted to 
+connect to the server. I typed yes and I had to input my password from my course account. Since I just created a password I had 
+to wait while to input the password. My screen should have this message pop up after I typed the password:![Image](CommandsLab1.png)
+
+
+3. Trying Some Commands
+
+In the terminal I tried using some commands like, cd ~, cd, and ls -lat. Nothing in my terminal popped up after trying the commands cd~ and cd, 
+but after typing ls -lat, I had many directory paths pop up on my screen.
+![Image](RemoteConnectingLab1.png)
