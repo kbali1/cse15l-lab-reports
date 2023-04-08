@@ -21,4 +21,5 @@ to wait a while to input my password. My screen had this message pop up after th
 In the terminal I tried using some commands like, cd~, cd, and ls -lat. Nothing in my terminal popped up after trying the 
 commands cd~ and cd. But after typing ls -lat, I had many directories and files pop up on my screen (which is shown in the 
 image below). After trying different commands, I used Ctrl-D and typed the exit command to log out of the remote server.
+
 ![Image](RemoteConnectingLab1.png)
