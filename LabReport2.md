@@ -1,6 +1,6 @@
-Lab Report: Bugs and Servers
-
 Kirsten Bali
+
+Lab Report: Bugs and Servers
 
 
 Part 1: Web Server
@@ -8,7 +8,16 @@ Part 1: Web Server
 
 Part 2: Bugs and Fixes
 
-The images below show the code that had bugs in it that produced failures when my partner and I ran our tests. 
+A failure inducing input for the method reversed():
 
+`public void testReversed(){
+
+    int[] input1 = { };
+    
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+    
+  }
+  
+}`
 
 Part 3: What I learned
