@@ -42,6 +42,6 @@ The after code of the method reversed():
         return newArray;
     }
 
-Changing `arr[i] = newArray[arr.length-i-1]` to `newArray[i] = arr[arr.length-i-1]' and returning `arr` instead of `newArray` addresses the issue because the orginal code was origially returning an empty array. The array "newArray" orginially did not have any elements in in it, so getting an element from newArray and initilizing arr[i] to that element would actually mena the value is empty.
+Changing `arr[i] = newArray[arr.length-i-1]` to `newArray[i] = arr[arr.length-i-1]` and returning `arr` instead of `newArray` addresses the issue because the orginal code was origially returning an empty array. The array `newArray` orginially did not have any elements in it, so getting an element from `newArray` and initializing `arr[i]` to that element would actually mean the value is null.
 
 Part 3: What I learned
