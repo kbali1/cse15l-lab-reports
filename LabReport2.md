@@ -42,6 +42,8 @@ The after code of the method reversed():
         return newArray;
     }
 
-Changing `arr[i] = newArray[arr.length-i-1]` to `newArray[i] = arr[arr.length-i-1]` and returning `arr` instead of `newArray` addresses the issue because the orginal code was origially returning an empty array. The array `newArray` orginially did not have any elements in it, so getting an element from `newArray` and initializing `arr[i]` to that element would actually mean the value is null.
+Changing `arr[i] = newArray[arr.length-i-1]` to `newArray[i] = arr[arr.length-i-1]` and returning `arr` instead of `newArray` addresses the issue because the orginal code was origially returning an empty array. The array `newArray` orginially did not have any elements in it, so getting an element from `newArray` and initializing `arr[i]` to that element would actually mean the value is null. Initializing `newArray[i]` to `arr[arr.length-i-1]` means the first element in the empty array is set to the first element in the original array. The `newArray` that was originally empty becomes the reversed array of `arr`, so returning that array means the tests will pass.
 
 Part 3: What I learned
+
+I learned that every URL has a port, and it can be any number that has not been taken already. My partner and I tried to use 6025 but could not figure out why our website would not load. We found out that it was because that number was taken already, so we changed it to 4739. Changing our port allowed our website to load. It was interesting to see how a unique port is essential to a URL. 
