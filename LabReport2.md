@@ -46,4 +46,4 @@ Changing `arr[i] = newArray[arr.length-i-1]` to `newArray[i] = arr[arr.length-i-
 
 Part 3: What I learned
 
-I learned that every URL has a port, and it can be any number that has not been taken already. My partner and I tried to use 6025 but could not figure out why our website would not load. We found out that it was because that number was taken already, so we changed it to 4739. Changing our port allowed our website to load. It was interesting to see how a unique port is essential to a URL. 
+I learned that every URL has a port, and it can be any number that has not been taken already. My partner and I tried to use 6025 but could not figure out why our website would not load. We found out that it was because that number was taken already, so we changed it to 4739. Changing our port allowed our website to load. It was interesting to see how a unique port is essential to deploying a web server.
