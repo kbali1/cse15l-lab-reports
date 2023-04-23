@@ -19,7 +19,7 @@ An input that doesn't induce a failure for the method reversed():
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
     
 The symptom as the output of running the tests:
-
+![Image](Lab3Part2.png)
 
 The before code of the method reversed(): 
 
