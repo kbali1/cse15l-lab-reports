@@ -8,6 +8,7 @@ Part 1: Web Server
 ![Image](Lab2Part1.png)
 
 ![Image](Lab2Part1Web1.png)  ![Image](Lab2Part1Web2.png)
+The method handleRequest() was called and the argument to the method was the URI url. The value `int num` got changes to `String newStr` because instead of incrementing int values I have to add String values to the website.
 
 Part 2: Bugs and Fixes
 
