@@ -5,6 +5,9 @@ Lab Report: Bugs and Servers
 
 Part 1: Web Server
 
+![Image](Lab2Part1.png)
+
+![Image](Lab2Part1Web1.png)  ![Image](Lab2Part1Web2.png)
 
 Part 2: Bugs and Fixes
 
