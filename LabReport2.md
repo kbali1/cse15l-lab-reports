@@ -1,6 +1,6 @@
-#Kirsten Bali
+# Kirsten Bali
 
-##Lab Report: Bugs and Servers
+## Lab Report: Bugs and Servers
 
 
 Part 1: Web Server
