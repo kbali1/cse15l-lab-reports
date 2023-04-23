@@ -1,15 +1,15 @@
-Kirsten Bali
+#Kirsten Bali
 
-Lab Report: Bugs and Servers
+##Lab Report: Bugs and Servers
 
 
 Part 1: Web Server
 
-![Image](Lab2Part1.png)
+Code for StringServer:![Image](Lab2Part1.png)
 
 ![Image](Lab2Part1Web1.png)  ![Image](Lab2Part1Web2.png)
 
-The method handleRequest() was called and the argument to the method was the URI url. The value `int num` got changes to `String newStr` because instead of incrementing int values I have to add String values to the website.
+The method handleRequest() is called, and the argument to the method was the URI url. The field was orginally `int num`, but got changed to `String newStr` because it adds words to the website page now instead of numbers.
 
 Part 2: Bugs and Fixes
 
