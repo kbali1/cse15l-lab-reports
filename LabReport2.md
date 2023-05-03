@@ -1,17 +1,44 @@
-# Kirsten Bali
+## Kirsten Bali
 
-## Lab Report: Bugs and Servers
+# Lab Report: Bugs and Servers
 
 
-Part 1: Web Server
+## Part 1: Web Server
 
-Code for StringServer:![Image](Lab2Part1.png)
+Code for StringServer:
+    class Handler implements URLHandler{
+        String newStr = "";
+        
+        public String handleRequest(URI url) {
+            System.out.println("Path: " + url.getPath());
+            if (url.getPath().contains("/add")) {
+                String[] parameters = url.getQuery().split("=");
+                if (parameters[0].equals("s")) {
+                    newStr += parameters[1];
+                    newStr += "\n";
+                    return String.format("%\n", newStr);
+                }
+             }
+             return "404 Not Found!";
+         }
+      }
+      
+      class StringServer {
+        public static void main(String[] args) throws IOException {
+            if (args.length == 0) {
+                System.out.println("Missing ort number! Try any number between 1024 and 49151");
+                return;
+            }
+            int port = Integer.parseInt(args[0]);
+            Server.start(port, newHandler());
+        }
+      }
 
 ![Image](Lab2Part1Web1.png)  ![Image](Lab2Part1Web2.png)
 
 The method handleRequest() is called, and the argument to the method was the URI url. The field was orginally `int num`, but got changed to `String newStr` because it adds words to the website page now instead of numbers.
 
-Part 2: Bugs and Fixes
+## Part 2: Bugs and Fixes
 
 A failure inducing input for the method reversed():
 
@@ -49,6 +76,6 @@ The after code of the method reversed():
 
 Changing `arr[i] = newArray[arr.length-i-1]` to `newArray[i] = arr[arr.length-i-1]` and returning `arr` instead of `newArray` addresses the issue because the orginal code was origially returning an empty array. The array `newArray` orginially did not have any elements in it, so getting an element from `newArray` and initializing `arr[i]` to that element would actually mean the value is null. Initializing `newArray[i]` to `arr[arr.length-i-1]` means the first element in the empty array is set to the first element in the original array. The `newArray` that was originally empty becomes the reversed array of `arr`, so returning that array means the tests will pass.
 
-Part 3: What I learned
+## Part 3: What I learned
 
 I learned that every URL has a port, and it can be any number that has not been taken already. My partner and I tried to use 6025 but could not figure out why our website would not load. We found out that it was because that number was taken already, so we changed it to 4739. Changing our port allowed our website to load. It was interesting to see how a unique port is essential to deploying a web server.
