@@ -6,9 +6,10 @@
 ## Part 1: Web Server
 
 Code for StringServer:
+    
     class Handler implements URLHandler{
         String newStr = "";
-        
+       
         public String handleRequest(URI url) {
             System.out.println("Path: " + url.getPath());
             if (url.getPath().contains("/add")) {
