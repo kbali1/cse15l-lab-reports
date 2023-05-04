@@ -1,42 +1,49 @@
-### Kirsten Bali
+#### Kirsten Bali
 
 ## Lab Report 3: Researching Commands
 
 # Grep
 
-#### 1. Interesting Command Line Option
+### 1. Interesting Command Line Option
 cite:
 
   `example1`
-  explanation
+  
+explanation
   
   `example2`
-  explanation
+
+explanation
   
   
-#### 2. Interesting Command Line Option
+### 2. Interesting Command Line Option
 cite:
 
   `example1`
-  explanation
+explanation
   
   `example2`
-  explanation
+  
+explanation
 
-#### 3. Interesting Command Line Option
+### 3. Interesting Command Line Option
 cite:
 
   `example1`
-  explanation
+
+explanation
   
   `example2`
-  explanation
+  
+explanation
 
-#### 4. Interesting Command Line Option
+### 4. Interesting Command Line Option
 cite:
 
   `example1`
-  explanation
+  
+explanation
   
   `example2`
-  explanation
+  
+explanation
