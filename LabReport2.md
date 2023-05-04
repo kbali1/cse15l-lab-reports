@@ -29,7 +29,8 @@ Code for StringServer:
             if (args.length == 0) {
                 System.out.println("Missing port number! 
                         
-                        Try any number between 1024 and 49151");
+                 
+                 Try any number between 1024 and 49151");
                 return;
             }
             int port = Integer.parseInt(args[0]);
