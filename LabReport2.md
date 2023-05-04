@@ -17,7 +17,7 @@ Code for StringServer:
                 if (parameters[0].equals("s")) {
                     newStr += parameters[1];
                     newStr += "\n";
-                    return String.format("%\n", newStr);
+                    return String.format("%s\n", newStr);
                 }
              }
              return "404 Not Found!";
@@ -27,7 +27,7 @@ Code for StringServer:
       class StringServer {
         public static void main(String[] args) throws IOException {
             if (args.length == 0) {
-                System.out.println("Missing ort number! Try any number between 1024 and 49151");
+                System.out.println("Missing port number! Try any number between 1024 and 49151");
                 return;
             }
             int port = Integer.parseInt(args[0]);
@@ -37,7 +37,7 @@ Code for StringServer:
 
 ![Image](Lab2Part1Web1.png)  ![Image](Lab2Part1Web2.png)
 
-The method handleRequest() is called, and the argument to the method was the URI url. The field was orginally `int num`, but got changed to `String newStr` because it adds words to the website page now instead of numbers.
+In the code above the method handleRequest() is called, and the argument to the method is the URI url.The url path gets checked in the first if statement, and the contains method is called to see if the url has the path "/add". The getQuery() method looks at the query which is the part of the url after the ? and before the anchor. When it looks at the query the method split() gets called and uses "=" as the delimeter of the string. When the string is split it puts the string elements that are before and after the "=" into a list. So the first element of the list should be s and the second element would be the string after the "=". The "\n" is used to add a new line to the page. It makes sure that each string is in its own line. The field was orginally `int num` in the code, but got changed to `String newStr` because it adds words to the website page now instead of numbers. Using the += operation allows the string to be concatenated to the page and won't replace a string with the newly added string. To use "/add" in the url type "/add?s=word" without quotes. You can replace "word" with any string you like you like. To add another string after that, just again replace that string with another string as shown in the image above. 
 
 ## Part 2: Bugs and Fixes
 
