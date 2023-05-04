@@ -4,8 +4,8 @@
 
 # Grep
 
-### 1. Interesting Command Line Option
-cite:
+### 1. grep -i
+cite: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
 
     `example1`
   
@@ -16,7 +16,18 @@ explanation
 explanation
   
   
-### 2. Interesting Command Line Option
+### 2. grep -c
+cite: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
+
+    `example1`
+
+explanation
+  
+    `example2`
+  
+explanation
+
+### 3. grep -A '<'line'>'
 cite:
 
     `example1`
@@ -27,19 +38,8 @@ explanation
   
 explanation
 
-### 3. Interesting Command Line Option
-cite:
-
-    `example1`
-
-explanation
-  
-    `example2`
-  
-explanation
-
-### 4. Interesting Command Line Option
-cite:
+### 4. grep -w
+cite: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
     `example1`
   
