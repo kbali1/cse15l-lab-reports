@@ -16,6 +16,7 @@ cite:
   
 #### 2. Interesting Command Line Option
 cite:
+
   `example1`
   explanation
   
@@ -24,6 +25,7 @@ cite:
 
 #### 3. Interesting Command Line Option
 cite:
+
   `example1`
   explanation
   
@@ -32,6 +34,7 @@ cite:
 
 #### 4. Interesting Command Line Option
 cite:
+
   `example1`
   explanation
   
