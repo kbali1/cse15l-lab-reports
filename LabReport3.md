@@ -11,7 +11,7 @@ cite:
   
 explanation
   
-  `example2`
+    `example2`
 
 explanation
   
@@ -19,31 +19,32 @@ explanation
 ### 2. Interesting Command Line Option
 cite:
 
-  `example1`
+    `example1`
+
 explanation
   
-  `example2`
+    `example2`
   
 explanation
 
 ### 3. Interesting Command Line Option
 cite:
 
-  `example1`
+    `example1`
 
 explanation
   
-  `example2`
+    `example2`
   
 explanation
 
 ### 4. Interesting Command Line Option
 cite:
 
-  `example1`
+    `example1`
   
 explanation
   
-  `example2`
+    `example2`
   
 explanation
