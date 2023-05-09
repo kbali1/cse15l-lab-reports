@@ -5,11 +5,13 @@
 # Grep
 
 ### 1. grep -i string filename
-cite: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
+https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
+
+This grep commandline is case insensitive and searches for strings that match the string. It then returns the lines in the file the string is in.
+
+    $ grep "THAT" pmed.0020281.txt
     
-    `$ grep "THAT" pmed.0020281.txt`
-    
-    `$ grep -i "THAT" pmed.0020281.txt
+    $ grep -i "THAT" pmed.0020281.txt
         PLoS Medicine —that involves the pharmaceutical industry, pharmaceutical
         forces that zealously guard their secrets could not have been told without the help of
         courageous men and women [1, 2] For that reason, those of us who congregated in Washington,
@@ -17,9 +19,10 @@ cite: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-exampl
         pharmaceuticals that are detailed to physicians, not to save lives or necessarily improve
         is to tell the truth. That honest effort is the source of any ethical difference we can or
         might make. Truth is the basis for the power of a whistleblower, one that can withstand the
-        assault of unprecedented odds against being heard put forth by that sum of political power,`
+        assault of unprecedented odds against being heard put forth by that sum of political power,
+        
+When I used the grep command and typed "THAT" without the `-i` option, it did not return anything because the grep command alone is case sensistive. However, when I used `-i`, with "THAT", the terminal printed out all the lines with the word that.
   
-explanation
   
     `$ grep "The" pmed.0020281.txt
         Whistleblowers serve no function if they cannot tell their stories. The present story of
@@ -48,9 +51,10 @@ explanation
         2005): “To leave the world a bit better, whether by a healthy child, a garden patch or a
         redeemed social condition; to know even one life breathed easier because you have lived;`
 
-explanation
-  
-  
+The first example without the use of `-i` returns all lines with "The" and not "the". The second command line with `-i` returns not only lines with "The" but lines with "the" as well.
+
+
+
 ### 2. grep -c string filename
 cite: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
 
@@ -67,6 +71,7 @@ When you want do find out how many lines matches the pattern
         102`
   
 explanation
+
 
 ### 3. grep -v string filename
 cite: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
@@ -109,6 +114,7 @@ explanation
         professor.`
   
 explanation
+
 
 ### 4. grep -w string filename
 cite: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
