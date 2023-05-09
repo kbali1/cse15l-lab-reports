@@ -7,7 +7,7 @@
 ### 1. grep -i string filename
 https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
 
-This grep commandline is case insensitive and searches for strings that match the string. It then returns the lines in the file the string is in.
+This grep commandline is case insensitive and searches for strings that match the string. It then returns the lines in the file the string is in. If you want to find the lines that cotani a word and do not care if it is capitalized or not, then use `grep -i`.
 
     $ grep "THAT" pmed.0020281.txt
     
@@ -58,10 +58,11 @@ The first example without the use of `-i` returns all lines with "The" and not "
 ### 2. grep -c string filename
 https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
 
-The command line `grep -c` counts how many lines have the string in the file.
+The command line `grep -c` counts how many lines have the string in the file. If you want to find how many lines in a text contain a certain word, then use the `grep -c` command option.
 
     $ grep -c "increased" rr74.txt
       28
+
 
 The line above counts how many times the string "increased" appear in a line and counts those lines. It then returns the count. It doesn't matter if the string is "increased" or "increasedly". As long as the string has the word "increased" in it, it counts that line.
 
@@ -73,9 +74,9 @@ The command above counts how many times "the" apears in the text file. It also c
 
 
 ### 3. grep -v string filename
-cite: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
-The command line `grep -v` returns lines that do not contain the string.
+The command line `grep -v` returns lines that do not contain the string. Use `grep v` when you want to find lines that do not contain a certain character or string.
 
     $ grep -v "the" working_for_Free.txt
         Working for Free Pays Off for Caring Lawyer
@@ -101,7 +102,8 @@ The command line `grep -v` returns lines that do not contain the string.
         program for at-risk high school students.
 
 In the example above, there are no lines that contain the string "the" in it except for "There" and "The" because the grep command is case sensitive. 
-  
+
+
     $ grep -v "a" working_for_Free.txt
         for his life's work defending the poor.
         right.
@@ -120,7 +122,7 @@ The example above does not return any line with strings that have the letter "a"
 ### 4. grep -w string filename
 https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
-The `-w` option return lines that contain the string alone and not lines with the string in other strings. 
+The `-w` option return lines that contain the string alone and not lines with the string in other strings. The command line `grep -w` helps find words by itself and not words that cotain the word you want to find.
 
     $ grep "a" preface.txt
             We present the narrative of this report and the recommendations that flow from it to
@@ -149,6 +151,7 @@ The `-w` option return lines that contain the string alone and not lines with th
                 We also approach the task of recommendations with humility. We have made a limited  
                 
 Grep without `-w` returns lines that have strings with the string "a" in it as well as the string "a" by itself. Grep with `-w` return lines that have the string "a" by itself and not lines that also have "a" in strings.
+
 
     $ grep "con" preface.txt
                 people for their consideration. Ten Commissioners-five Republicans and five
