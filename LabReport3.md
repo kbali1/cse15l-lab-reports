@@ -21,7 +21,7 @@ This grep commandline is case insensitive and searches for strings that match th
         might make. Truth is the basis for the power of a whistleblower, one that can withstand the
         assault of unprecedented odds against being heard put forth by that sum of political power,
         
-When I used the grep command and typed "THAT" without the `-i` option, it did not return anything because the grep command alone is case sensistive. However, when I used `-i`, with "THAT", the terminal printed out all the lines with the word that.
+When I used the grep command and typed "THAT" without the `-i` option, it did not return anything because the grep command alone is case sensistive. However, when I used `-i`, with "THAT", the terminal printed out all the lines with the string "that".
   
   
     $ grep "The" pmed.0020281.txt
@@ -63,17 +63,21 @@ The command line `grep -c` counts how many lines have the string in the file.
     $ grep -c "increased" rr74.txt
       28
 
-The line above counts how many times the string "increased" appear in a line and counts those lines. It doesn't matter if the string is "increased" or "increasedly". As long as the string has the word "increased" in it, it counts that line.
+The line above counts how many times the string "increased" appear in a line and counts those lines. It then returns the count. It doesn't matter if the string is "increased" or "increasedly". As long as the string has the word "increased" in it, it counts that line.
 
     $ grep -c "the" rr74.txt
       102
   
-The command above counts how many times "the" apears in the text file. It also counts the the lines with the string "there" or any other string that contains the string "the."
+The command above counts how many times "the" apears in the text file. It also counts the the lines with the string "there" or any other string that contains the string "the".
+
+
 
 ### 3. grep -v string filename
 cite: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
-    `$ grep -v "the" working_for_Free.txt
+The command line `grep -v` returns lines that do not contain the string.
+
+    $ grep -v "the" working_for_Free.txt
         Working for Free Pays Off for Caring Lawyer
         Bruce Zucker chooses to provide pro bono legal aid to poor
         tenants over more prestigious work, and it has become his life's
@@ -94,11 +98,11 @@ cite: https://www.geeksforgeeks.org/grep-command-in-unixlinux/
         statewide recognition to attorneys for providing pro bono legal
         County Superior Court, where he has served as a temporary judge in
         Small Claims Court and has volunteered with a court-sponsored
-        program for at-risk high school students.`
+        program for at-risk high school students.
 
-explanation
+In the example above, there are no lines that contain the string "the" in it except for "There" and "The" because the grep command is case sensitive. 
   
-    `$ grep -v "a" working_for_Free.txt
+    $ grep -v "a" working_for_Free.txt
         for his life's work defending the poor.
         right.
         thing."
@@ -108,18 +112,17 @@ explanation
         seriously."
         He's willing to help."
         he gets worn down by his clients' overwhelming poverty. To relieve
-        professor.`
+        professor.
   
-explanation
+The example above does not return any line with strings that have the letter "a" in it. 
 
 
 ### 4. grep -w string filename
-cite: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
-By default, grep matches the given string/pattern even if it is found as a substring in a file. 
-The -w option to grep makes it match only the whole words. 
+The `-w` option return lines that contain the string alone and not lines with the string in other strings. 
 
-    `$ grep "a" preface.txt
+    $ grep "a" preface.txt
             We present the narrative of this report and the recommendations that flow from it to
                 the President of the United States, the United States Congress, and the American
                 people for their consideration. Ten Commissioners-five Republicans and five
@@ -129,9 +132,9 @@ The -w option to grep makes it match only the whole words.
                 September 11, 2001, was a day of unprecedented shock and suffering in the history of
                 the United States. The nation was unprepared. How did this happen, and how can we
                 avoid such tragedy again?
-                ... `
+                ... 
                
-    `$ grep -w "a" preface.txt
+    $ grep -w "a" preface.txt
                 Democrats chosen by elected leaders from our nation's capital at a time of great
                 We have come together with a unity of purpose because our nation demands it.
                 September 11, 2001, was a day of unprecedented shock and suffering in the history of
@@ -143,10 +146,11 @@ The -w option to grep makes it match only the whole words.
                 This final report is only a summary of what we have done, citing only a fraction of
                 inevitably will come to light. We present this report as a foundation for a better
                 understanding of a landmark in the history of our nation.
-                We also approach the task of recommendations with humility. We have made a limited  `
-explanation: First one prints out every line that has the letter a but second one prints out lines that have a by itself.
-  
-    `$ grep "con" preface.txt
+                We also approach the task of recommendations with humility. We have made a limited  
+                
+Grep without `-w` returns lines that have strings with the string "a" in it as well as the string "a" by itself. Grep with `-w` return lines that have the string "a" by itself and not lines that also have "a" in strings.
+
+    $ grep "con" preface.txt
                 people for their consideration. Ten Commissioners-five Republicans and five
                 and border control, the flow of assets to terrorist organizations, commercial
                 aviation, the role of congressional oversight and resource allocation, and other
@@ -161,8 +165,8 @@ explanation: First one prints out every line that has the letter a but second on
                 the sources we have consulted. But in an event of this scale, touching so many
                 issues and organizations, we are conscious of our limits. We have not interviewed
                 number of them. We decided consciously to focus on recommendations we believe to be
-                considered the views of others. We hope our report will encourage our fellow`
+                considered the views of others. We hope our report will encourage our fellow
                 
-     `$ grep -w "con" preface.txt`
+     $ grep -w "con" preface.txt
   
-explanation
+Grep without `-w` returns lines that have strings that contain the string "con". But grep with `-w` does not return any lines that have string "con" by itself. Because "con" is a nonexistent word in the text.
