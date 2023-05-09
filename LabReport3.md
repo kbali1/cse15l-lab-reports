@@ -7,7 +7,7 @@
 ### 1. grep -i string filename
 https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
 
-This grep commandline is case insensitive and searches for strings that match the string. It then returns the lines in the file the string is in. If you want to find the lines that cotani a word and do not care if it is capitalized or not, then use `grep -i`.
+This grep commandline is case insensitive and searches for strings that match the string. It then returns the lines in the file the string is in. If you want to find the lines that contain a word that is capitalized or not, then use `grep -i`.
 
     $ grep "THAT" pmed.0020281.txt
     
