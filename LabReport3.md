@@ -24,11 +24,11 @@ This grep commandline is case insensitive and searches for strings that match th
 When I used the grep command and typed "THAT" without the `-i` option, it did not return anything because the grep command alone is case sensistive. However, when I used `-i`, with "THAT", the terminal printed out all the lines with the word that.
   
   
-    `$ grep "The" pmed.0020281.txt
+    $ grep "The" pmed.0020281.txt
         Whistleblowers serve no function if they cannot tell their stories. The present story of
-        A whistleblower's success depends upon competent and articulate media. The debate to`
+        A whistleblower's success depends upon competent and articulate media. The debate to
         
-    `$ grep -i "The" pmed.0020281.txt
+    $ grep -i "The" pmed.0020281.txt
         Whistleblowers serve no function if they cannot tell their stories. The present story of
         PLoS Medicine —that involves the pharmaceutical industry, pharmaceutical
         benefit management corporations, the managed care industry, and the political and lobbying
@@ -49,29 +49,26 @@ When I used the grep command and typed "THAT" without the `-i` option, it did no
         improve the status quo—be it in pharmaceutical marketing or managed-care decision
         success (I have adapted his comments for all of us who gathered in Washington in mid-May
         2005): “To leave the world a bit better, whether by a healthy child, a garden patch or a
-        redeemed social condition; to know even one life breathed easier because you have lived;`
+        redeemed social condition; to know even one life breathed easier because you have lived;
 
 The first example without the use of `-i` returns all lines with "The" and not "the". The second command line with `-i` returns not only lines with "The" but lines with "the" as well.
 
 
 
 ### 2. grep -c string filename
-cite: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
+https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
 
-Counting the number of matches using grep -c
+The command line `grep -c` counts how many lines have the string in the file.
 
-When you want to count that how many lines matches the given pattern/string, then use the option -c.
-    `$ grep -c "increased" rr74.txt
-        28`
+    $ grep -c "increased" rr74.txt
+      28
 
-explanation
+The line above counts how many times the string "increased" appear in a line and counts those lines. It doesn't matter if the string is "increased" or "increasedly". As long as the string has the word "increased" in it, it counts that line.
 
-When you want do find out how many lines matches the pattern
-    `$ grep -c the rr74.txt
-        102`
+    $ grep -c "the" rr74.txt
+      102
   
-explanation
-
+The command above counts how many times "the" apears in the text file. It also counts the the lines with the string "there" or any other string that contains the string "the."
 
 ### 3. grep -v string filename
 cite: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
@@ -118,6 +115,7 @@ explanation
 
 ### 4. grep -w string filename
 cite: https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
+
 By default, grep matches the given string/pattern even if it is found as a substring in a file. 
 The -w option to grep makes it match only the whole words. 
 
