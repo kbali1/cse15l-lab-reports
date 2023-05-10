@@ -5,7 +5,7 @@
 # Grep
 
 ### 1. grep -i string filename
-https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ [https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/]
+https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
 
 This grep command line is case insensitive and searches for strings that match the string. It then returns the lines in the file the string is in. If you want to find the lines that contain a word that is capitalized or not, then use `grep -i`.
 
@@ -56,7 +56,7 @@ The first example without the use of `-i` returns all lines with "The" and not "
 
 
 ### 2. grep -c string filename
-https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ [https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/]
+https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
 
 The command line `grep -c` counts how many lines have the string in the file. If you want to find how many lines in a text contain a certain word, then use the `grep -c` command option.
 
@@ -74,7 +74,7 @@ The command above counts how many times "the" apears in the text file. It also c
 
 
 ### 3. grep -v string filename
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/ [https://www.geeksforgeeks.org/grep-command-in-unixlinux/]
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 The command line `grep -v` returns lines that do not contain the string. Use `grep v` when you want to find lines that do not contain a certain character or string.
 
@@ -120,7 +120,7 @@ The example above does not return any line with strings that have the letter "a"
 
 
 ### 4. grep -w string filename
-https://www.geeksforgeeks.org/grep-command-in-unixlinux/[https://www.geeksforgeeks.org/grep-command-in-unixlinux/]
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
 
 The `-w` option return lines that contain the string alone and not lines with the string in other strings. The command line `grep -w` helps find words by itself and not words that contain the word you want to find.
 
