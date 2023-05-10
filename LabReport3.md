@@ -7,7 +7,7 @@
 ### 1. grep -i string filename
 https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/ 
 
-This grep commandline is case insensitive and searches for strings that match the string. It then returns the lines in the file the string is in. If you want to find the lines that contain a word that is capitalized or not, then use `grep -i`.
+This grep command line is case insensitive and searches for strings that match the string. It then returns the lines in the file the string is in. If you want to find the lines that contain a word that is capitalized or not, then use `grep -i`.
 
     $ grep "THAT" pmed.0020281.txt
     
@@ -69,7 +69,7 @@ The line above counts how many times the string "increased" appear in a line and
     $ grep -c "the" rr74.txt
       102
   
-The command above counts how many times "the" apears in the text file. It also counts the the lines with the string "there" or any other string that contains the string "the".
+The command above counts how many times "the" apears in the text file. It also counts the the lines with the string "there" or any other word that contains the string "the".
 
 
 
@@ -122,7 +122,7 @@ The example above does not return any line with strings that have the letter "a"
 ### 4. grep -w string filename
 https://www.geeksforgeeks.org/grep-command-in-unixlinux/ 
 
-The `-w` option return lines that contain the string alone and not lines with the string in other strings. The command line `grep -w` helps find words by itself and not words that cotain the word you want to find.
+The `-w` option return lines that contain the string alone and not lines with the string in other strings. The command line `grep -w` helps find words by itself and not words that contain the word you want to find.
 
     $ grep "a" preface.txt
             We present the narrative of this report and the recommendations that flow from it to
@@ -150,7 +150,7 @@ The `-w` option return lines that contain the string alone and not lines with th
                 understanding of a landmark in the history of our nation.
                 We also approach the task of recommendations with humility. We have made a limited  
                 
-Grep without `-w` returns lines that have strings with the string "a" in it as well as the string "a" by itself. Grep with `-w` return lines that have the string "a" by itself and not lines that also have "a" in strings.
+Grep without `-w` returns lines that have strings with the string "a" in it as well as the string "a" by itself. Grep with `-w` return lines that have the string "a" by itself and not lines that also have "a" in the strings.
 
 
     $ grep "con" preface.txt
