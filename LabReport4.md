@@ -17,8 +17,10 @@ To clone this repsoitory, I first typed `ls` to see which which directory I was 
 ### 3. Run the Tests
 ![Image](Lab7MyFail.PNG)
 
-To compile the code in the lab7 file, I ran the comman line `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and ran the tests by using the command line `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` in the terminal. After the code compiles and runs, it should show on the screen that the tests fail as shown in the terminal in the image above.
+To compile the code in the lab7 file, I ran the comman line `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and ran the tests by using the command line `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` in the terminal. After the code compiles and runs, it should show on the screen that the tests fail as shown in the image above.
 
 
 ### 4. Fix the Failing Tests
-![Image] 
+![Image](Lab7FixedBugs.png)
+  
+
