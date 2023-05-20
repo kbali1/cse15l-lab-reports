@@ -23,9 +23,9 @@ To compile the code in the lab7 file, I ran the command line `javac -cp .:lib/ha
 ### 4. Fix the Failing Tests
 ![Image](Lab7FixedBugs.png)
   
-To fix the failing tests, I have to edit the file `ListExamples.java`. I edited this file by using vim and opened it up by running the command lim `vim ListExamples` <enter> and the terminal opened it up on vim. The screen that should appear in the terminal is shown in the image above. To edit the code on vim, press <esc> to make sure you are in normal mode. Press <j> 42 times to move the cursor down to the line where it shows `index1 += 1` in the last while loop. The push <i> to go into insert mode and press <l> 12 times to move the cursor to the right 12 times. Push the number <2> on the keyborad and press <backspace> to change `index1` to `index2`. Then press <esc> to back into normal mode and type <:wq> to save changes and exit vim.
+To fix the failing tests, I have to edit the file `ListExamples.java`. I edited this file by using vim and opened it up by running the command lim `vim ListExamples` <enter> and the terminal opened it up on vim. The screen that should appear in the terminal is shown in the image above. To edit the code on vim, press <esc> to make sure you are in normal mode. Press <j> 42 times to move the cursor down to the line where it shows `index1 += 1` in the last while loop. Then push <i> to go into insert mode and press <l> 12 times to move the cursor to the right 12 times. Push the number <2> on the keyborad and press <backspace> to change `index1` to `index2`. Then press <esc> to back into normal mode and type <:wq> to save changes and exit vim.
 
 
 ### 5. Run the Tests Again
-  ![Image](Lab7Mysuccess.PNG)
+![Image](Lab7Mysuccess.PNG)
 Like in step 3, to compile the code run the command line `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` <enter> and run it by typing `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` <enter> in the terminal. The screen should show that the tests passed after it ran.
