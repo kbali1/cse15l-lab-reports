@@ -1,6 +1,6 @@
 #### Kirsten Bali
 
-# Lab Rport 4
+# Lab Report 4
 
 ### Log into ieng6
 ![Image](Capture.PNG)
@@ -9,5 +9,4 @@ First I set my default terminal to git bash and typed in the terminal line `ssh 
 
 ### Clone the fork of the Repository from Github 
 ![Image](Lab7GitClone.PNG)
-  
-
+To clone this repsoitory, I first typed `ls` to see which which directory I was in and typed `cd <ilename>`, so I can clone the repository in the directory I want to. After that I typed `git clone <url shown above>` <enter> to clone the repository. The image above shows that the repository was successfully cloned.
