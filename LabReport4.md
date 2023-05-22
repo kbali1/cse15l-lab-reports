@@ -11,7 +11,7 @@ First I set my default terminal to git bash and typed in the terminal line `ssh 
 ### 2. Clone the Repository from Github 
 ![Image](Lab7GitClone.PNG)
 
-To clone this repsoitory, I first typed `ls` to see which which directory I was in and typed `cd` and the file name, so I can clone the repository in the directory I want to. After that I typed `git clone https://github.com/ucsd-cse15l-s23/lab7 <enter>` to clone the repository. The image above shows that the repository was successfully cloned.
+To clone this repsoitory, I first typed `ls` to see which which directory I was in and typed `cd` and the file name, so I can clone the repository in the directory I want to. Then I typed `git clone https://github.com/ucsd-cse15l-s23/lab7 <enter>` to clone the repository. The image above shows that the repository was successfully cloned.
 
   
 ### 3. Run the Tests
