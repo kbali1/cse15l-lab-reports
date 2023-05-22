@@ -23,7 +23,7 @@ To compile the code in the lab7 file, I ran the command line `javac -cp .:lib/ha
 ### 4. Fix the Failing Tests
 ![Image](Lab7FixedBugs.png)
   
-To fix the failing tests, I have to edit the file `ListExamples.java`. I edited this file by using vim and opened it up by running the command lim `vim ListExamples` and pushed enter. The terminal opened it up on vim. The screen that should appear in the terminal is shown in the image above. To edit the code on vim, press these keys: </esc>, </j> 42 times, <i>, <l> 12 times, <2>, <backspace>, <esc> and <:wq>. 
+To fix the failing tests, I have to edit the file `ListExamples.java`. I edited this file by using vim and opened it up by running the command lim `vim ListExamples` and pushed enter. The terminal opened it up on vim. The screen that should appear in the terminal is shown in the image above. To edit the code on vim, press these keys: <esc><j>x42<i><l>x12<2><backspace><esc><:wq>. 
 Pressing the "esc" button to make sure you are in normal mode. The "j" moves the cursor down to the line where it shows `index1 += 1` in the last while loop. The "i" changes vim to insert mode so I can press "l" 12 times to move the cursor to the right 12 times. Pushing the number 2 on the keyborad and the backspace button allows `index1` to be changed to `index2`. Pressing the "esc" button puts vim back into normal mode. I can now save changes and exit vim by typing ":wq".
 
 
