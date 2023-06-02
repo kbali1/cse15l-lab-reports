@@ -33,8 +33,6 @@ Like in step 3, to compile the code run the command line in the terminal, type `
 
   
 ### 6. Commit and Push Changes
-![Image](Lab7NewCommit.png)
-![Image](Lab7NewGitPush.png)
-![Image](Lab7Push.png)
+![Image](lab7Commitandpush.png)
 
-I was unable to complete the last step due to an error in generating an ssh key for github, so I could not push changes through my course account. The result of pushing the changes should be shown in the third image above. Before committing and pushing the changes, I first have to type the command `git add * <enter>` to update the chnages in my directory. Then I would type the command `git commit -m "edit lab7" <enter>` and `git push origin main <enter>` to commit and push changes. The message does not have to be "edit lab7." It can be anything as long as it is in quotes in the commit command line. The branch does not have to be main in the push command line. It just has to be a branch name. But the file is already in the main branch so it is best that I use main. 
+Before committing and pushing the changes, I first have to type the command `git add * <enter>` to update the changes in my directory. Then I would type the command `git commit -m "edit lab7" <enter>` and `git push origin main <enter>` to commit and push changes. The message does not have to be "edit lab7." It can be anything as long as it is in quotes in the commit command line. The branch does not have to be main in the push command line. It just has to be a branch name. But the file is already in the main branch so it is best that I use main. 
