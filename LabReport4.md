@@ -34,8 +34,8 @@ Like in step 3, to compile the code run the command line in the terminal, type `
   
 ### 6. Commit and Push Changes
 ![Image](Lab7GitCommitandPush.png)
-![Image](gitcommitlab7.png)
 
+![Image](gitcommitlab7.png) 
 ![Image](Lab7Commit.png)
 
 
