@@ -2,8 +2,6 @@
 # Lab Report 5
 
 ## Debugging Scenario
-You should actually set up and run the scenario from your screenshots. It should involve at least a Java file and a bash script. Describing the bug should involve reading some output at the terminal resulting from running one or more commands. Design an error that produces more interesting output than a single message about a syntax or unbound identifier error – showcase some interesting wrong behavior! Feel free to set this up by cloning and breaking some existing code like the grading script or code from class, or by designing something of your own from scratch, etc.
-
 ### 1. Post From Student
 **What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?**
 
@@ -15,7 +13,7 @@ I know I am suppose to see one failure in ListExamplesTest class when I run and 
 
 ![Image](Lab7MyFail.png)
 
-Even though the fialure is showing up in my terminal, I am also seeing another failure:
+Even though the expected output shows in the terminal, I am also seeing another failure:
 
 ![Image](LabReport5Bug.png)
 
@@ -32,8 +30,7 @@ The student does not have the files ListExamples.java and ListExamples.class in 
 
 ### 4. How To Fix the Bug
 The lab7 directory must have the files ListExamplesTests.java, ListExamples.java, test.sh, and the lib folder. But the student does not have the file ListExamples.java. The student ran the line `sh test.sh`, which is what they are suppose to do to show the correct output. The bash script contains the compile and run commands `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` and `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. The student needs to figure out which folder the file ListExamples.java is in and move it back into the lab7 directory, or they can git clone another lab7 repository and run the line `sh test.sh` again to have the correct output.
-At the end, all the information needed about the setup including:
 
 
 ## Reflection
-I did not know you could make a bash script of the code you want to input in a terminal and run that script in the terminal. I always thought that the code must be run through the terminal in order for the files to compile and run. I thought that writing the if statement in bash script was especially interesting. In Lab 6, my partner and I wrote the if statemnet to check if a file was in the right directory, and then the terminal would show "Good job!" if the if statement was true. Before this class Command Prompt and Git Bash terminal languages and syntax were foreign to me, but now I understand how to use the terminal commands and what to commands to research to make my files run and work.
+I did not know you could make a bash script of code you want to input in a terminal and run that script in the terminal. I always thought that the code must be run through the terminal in order for the files to compile and run. I thought that writing the if statement in bash script was especially interesting. In Lab 6, my partner and I wrote the if statemnet to check if a file was in the right directory, and then the terminal would show "Good job!" if the if statement was true. This was just like writing code in a program, but in a different way, which I thought was cool. Before this class Command Prompt and Git Bash terminal languages and syntax were foreign to me, but now I understand how to use the terminal commands and what to commands to research to make my files run and work.
