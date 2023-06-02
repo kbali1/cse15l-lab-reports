@@ -18,6 +18,7 @@ Even though the expected output shows in the terminal, I am also seeing another 
 ![Image](LabReport5Bug.png)
 
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, even the last few commands you ran. Do your best to provide as much context as you can.**
+
 It says the class is not found. But I am pretty sure I saw the ListExamplesTest class in the lab7 directory. I ran the command `sh test.sh` in the terminal to compile and run my code. What may be the problem?
 
 ### 2. Response From TA
